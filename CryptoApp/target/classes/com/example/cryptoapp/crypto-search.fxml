@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="742.0" prefWidth="600.0" style="-fx-background-color: #f5c000; -fx-border-radius: 2%;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cryptoapp.ApiController">
+   <Label layoutX="241.0" layoutY="33.0" text="CryptoEx" textFill="#12296c">
+      <font>
+         <Font name="Avenir Next Bold" size="21.0" />
+      </font>
+   </Label>
+   <VBox layoutX="102.0" layoutY="91.0" prefHeight="58.0" prefWidth="100.0" spacing="15.0">
+      <children>
+         <Label text="Cryptocurrency" textFill="#013a90">
+            <font>
+               <Font name="System Bold" size="13.0" />
+            </font>
+         </Label>
+      </children>
+   </VBox>
+   <VBox layoutX="211.0" layoutY="91.0" prefHeight="58.0" prefWidth="303.0" spacing="8.0">
+      <TextField fx:id="cryptoName" promptText="BTC" />
+   </VBox>
+   <Button fx:id="buttonSearch" layoutX="309.0" layoutY="134.0" mnemonicParsing="false" onAction="#onInsertClick" prefHeight="30.0" prefWidth="108.0" style="-fx-background-color: fb6342; -fx-border-radius: 50px; -fx-border-width: 200px;" text="Search" textFill="#013a90" textOverrun="CLIP">
+      <font>
+         <Font name="System Bold Italic" size="12.0" />
+      </font></Button>
+   <VBox layoutX="102.0" layoutY="226.0" prefHeight="58.0" prefWidth="100.0" spacing="15.0">
+      <children>
+         <Label text="USD Value" textFill="#013a90">
+            <font>
+               <Font name="System Bold" size="13.0" />
+            </font>
+         </Label>
+         <Label layoutX="10.0" layoutY="10.0" text="JPY Value" textFill="#013a90">
+            <font>
+               <Font name="System Bold" size="13.0" />
+            </font>
+         </Label>
+         <Label layoutX="10.0" layoutY="44.0" text="EUR Value" textFill="#013a90">
+            <font>
+               <Font name="System Bold" size="13.0" />
+            </font>
+         </Label>
+      </children>
+   </VBox>
+   <VBox layoutX="217.0" layoutY="226.0" prefHeight="58.0" prefWidth="303.0" spacing="8.0">
+      <children>
+         <TextField fx:id="usdValue" />
+         <TextField fx:id="jpyValue" layoutX="10.0" layoutY="10.0" />
+         <TextField fx:id="eurValue" layoutX="10.0" layoutY="44.0" />
+      </children>
+   </VBox>
+   <Label layoutX="248.0" layoutY="358.0" text="User manual" textFill="#013a90">
+      <font>
+         <Font name="System Bold" size="13.0" />
+      </font>
+   </Label>
+   <Text fill="#013a90" layoutX="29.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This app is designed to provide real-time information about various cryptocurrencies. It allows you to easily fetch and view the current conversion rates of your favorite cryptocurrencies against three major currencies: USD, JPY, and EUR." wrappingWidth="542.13671875" />
+   <Text fill="#013a90" layoutX="29.0" layoutY="469.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Cryptocurrency Selection: Enter the name of the cryptocurrency you want to learn about in the provided field." wrappingWidth="542.13671875" />
+   <Text fill="#013a90" layoutX="29.0" layoutY="520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Data Retrieval: Click the &quot;Search&quot; button to trigger the app to retrieve the latest market values for the entered cryptocurrency." wrappingWidth="542.13671875" />
+   <Text fill="#013a90" layoutX="29.0" layoutY="574.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Instant Currency Values: Instantly view the converted values of the selected cryptocurrency in USD, JPY, and EUR." wrappingWidth="542.13671875" />
+   <Text fill="#013a90" layoutX="29.0" layoutY="633.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. Error Handling: In case of network issues or if the entered cryptocurrency is not recognized, the app displays &quot;N/A&quot; to signify that the information couldn't be fetched." wrappingWidth="542.13671875" />
+   <Button fx:id="backButton" layoutX="261.0" layoutY="671.0" mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="30.0" prefWidth="56.0" style="-fx-background-color: fb6342; -fx-border-radius: 50px; -fx-border-width: 200px;" text="Close" textFill="#ffe900" textOverrun="CLIP">
+      <font>
+         <Font name="System Bold Italic" size="12.0" />
+      </font>
+   </Button>
+   <Text fontSmoothingType="LCD" layoutX="369.0" layoutY="713.0" strokeType="OUTSIDE" strokeWidth="0.0" text="© 2014 - 2023 Crypto Coin Comparison Ltd">
+      <font>
+         <Font size="12.0" />
+      </font>
+   </Text>
+
+</AnchorPane>

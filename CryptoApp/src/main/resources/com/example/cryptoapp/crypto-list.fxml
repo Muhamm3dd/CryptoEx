@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="742.0" prefWidth="600.0" style="-fx-background-color: #f5c000; -fx-border-radius: 2%;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cryptoapp.ApiController">
+   <Label layoutX="241.0" layoutY="33.0" text="CryptoEx" textFill="#16358a">
+      <font>
+         <Font name="Avenir Next Bold" size="21.0" />
+      </font>
+   </Label>
+   <ListView fx:id="myListView"  layoutX="196.0" layoutY="131.0" prefHeight="228.0" prefWidth="243.0">
+      <items>
+         <FXCollections fx:factory="observableArrayList">
+            <String fx:value="Bitcoin (BTC)" />
+            <String fx:value="Ethereum (ETH)" />
+            <String fx:value="Ripple (XRP)" />
+            <String fx:value="Litecoin (LTC)" />
+            <String fx:value="Cardano (ADA)" />
+            <String fx:value="Polkadot (DOT)" />
+            <String fx:value="Stellar (XLM)" />
+            <String fx:value="Chainlink (LINK)" />
+            <String fx:value="Bitcoin Cash (BCH)" />
+            <String fx:value="Dogecoin (DOGE)" />
+            <String fx:value="Binance Coin (BNB)" />
+            <String fx:value="Solana (SOL)" />
+            <String fx:value="XEM (XEM)" />
+            <String fx:value="USD Coin (USDC)" />
+            <String fx:value="Avalanche (AVAX)" />
+            <String fx:value="Tezos (XTZ)" />
+            <String fx:value="Monero (XMR)" />
+            <String fx:value="Tron (TRX)" />
+            <String fx:value="EOS (EOS)" />
+            <String fx:value="VeChain (VET)" />
+            <String fx:value="Neo (NEO)" />
+            <String fx:value="Cosmos (ATOM)" />
+            <String fx:value="IOTA (MIOTA)" />
+            <String fx:value="Dash (DASH)" />
+            <String fx:value="Zcash (ZEC)" />
+            <String fx:value="Compound (COMP)" />
+            <String fx:value="Aave (AAVE)" />
+            <String fx:value="Chainlink (LINK)" />
+            <String fx:value="Filecoin (FIL)" />
+            <String fx:value="Uniswap (UNI)" />
+            <String fx:value="Theta (THETA)" />
+            <String fx:value="Maker (MKR)" />
+            <String fx:value="SushiSwap (SUSHI)" />
+            <String fx:value="Yearn.finance (YFI)" />
+            <String fx:value="Huobi Token (HT)" />
+            <String fx:value="Polygon (MATIC)" />
+            <String fx:value="Dai (DAI)" />
+            <String fx:value="Aragon (ANT)" />
+            <String fx:value="Kyber Network (KNC)" />
+            <String fx:value="Ren (REN)" />
+            <String fx:value="Synthetix (SNX)" />
+            <String fx:value="Loopring (LRC)" />
+            <String fx:value="Ontology (ONT)" />
+            <String fx:value="Qtum (QTUM)" />
+            <String fx:value="Kusama (KSM)" />
+            <String fx:value="Compound (COMP)" />
+            <String fx:value="Aave (AAVE)" />
+            <String fx:value="Chainlink (LINK)" />
+            <String fx:value="Filecoin (FIL)" />
+            <!-- Add more cryptocurrencies as needed -->
+         </FXCollections>
+      </items>
+   </ListView>
+   <Label layoutX="250.0" layoutY="371.0" text="User manual" textFill="#013a90">
+      <font>
+         <Font name="Arial Bold" size="13.0" />
+      </font>
+   </Label>
+   <Text fill="#013a90" layoutX="29.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This app is designed to provide real-time information about various cryptocurrencies. It allows you to easily fetch and view the current conversion rates of your favorite cryptocurrencies against three major currencies: USD, JPY, and EUR." wrappingWidth="542.13671875" />
+   <Text fill="#013a90" layoutX="29.0" layoutY="469.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Cryptocurrency Selection: Enter the name of the cryptocurrency you want to learn about in the provided field." wrappingWidth="542.13671875" />
+   <Text fill="#013a90" layoutX="29.0" layoutY="520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Data Retrieval: Click the &quot;Search&quot; button to trigger the app to retrieve the latest market values for the entered cryptocurrency." wrappingWidth="542.13671875" />
+   <Text fill="#013a90" layoutX="29.0" layoutY="574.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Instant Currency Values: Instantly view the converted values of the selected cryptocurrency in USD, JPY, and EUR." wrappingWidth="542.13671875" />
+   <Text fill="#013a90" layoutX="29.0" layoutY="633.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. Error Handling: In case of network issues or if the entered cryptocurrency is not recognized, the app displays &quot;N/A&quot; to signify that the information couldn't be fetched." wrappingWidth="542.13671875" />
+   <Text fontSmoothingType="LCD" layoutX="363.0" layoutY="712.0" strokeType="OUTSIDE" strokeWidth="0.0" text="© 2014 - 2023 Crypto Coin Comparison Ltd">
+      <font>
+         <Font size="12.0" />
+      </font>
+   </Text>
+   <Text fill="#0e196e" layoutX="168.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search   for  the  Crypto  rates">
+      <font>
+         <Font name="Diwan Kufi Regular" size="14.0" />
+      </font>
+   </Text>
+   <Button fx:id="buttonSearch" layoutX="345.0" layoutY="92.0" mnemonicParsing="false" onAction="#onInsertClick1" prefHeight="30.0" prefWidth="108.0" style="-fx-background-color: fb6342; -fx-border-radius: 50px; -fx-border-width: 200px;" text="Search" textFill="#013a90" textOverrun="CLIP">
+      <font>
+         <Font name="System Bold Italic" size="12.0" />
+      </font>
+   </Button>
+</AnchorPane>
